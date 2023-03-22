@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=andreastorstad@gmail.com" method="post">
+
+        <label for="name">Namn</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br>
+
+        <p>Företag eller Privat?</p>
+        <input type="radio" name="corpration" id="corp" value="corp">
+        <label for="corp">Företag</label><br>
+        
+        <input type="radio" name="corpration" id="private" value="private">
+        <label for="private">Privat</label><br>
+
+        
+        <label for="info">Berätta lite om dina förväntningar</label><br>
+        <textarea id="info" rows="5" cols="80" name="info"></textarea><br>
+        
+        <input type="hidden" name="newsletter" value="no">
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        <label for="newsletter">Vill du ha nyhetsbrev</label>
+        
+
+        <br><br>
+        <input type="submit" value="Registrera dig">
+    </form>
+</body>
+</html>
