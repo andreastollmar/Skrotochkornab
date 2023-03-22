@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontaktformulär Skrot och Korn</title>
 </head>
-<body>
-    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=andreastorstad@gmail.com" method="post">
 
-        <label for="name">Namn</label>
-        <input type="text" id="name" name="name"><br>
+<body style="background-color: burlywood;">
+    <header align="center" style="background-color: cornsilk; margin: 30px; padding: 5px">
+        <h1>Vänligen fyll i uppgifterna</h1>
+        <a href="index.html">Startsida</a>
+    </header>
+    <div style="margin: 30px; padding: 20px; background-color: cornsilk;">
+        <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=andreastorstad@gmail.com"
+            method="post">
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email"><br>
+            <label for="name">Namn</label>
+            <input style="margin-left: 12px;" type="text" id="name" name="name"><br><br>
 
-        <p>Företag eller Privat?</p>
-        <input type="radio" name="corpration" id="corp" value="corp">
-        <label for="corp">Företag</label><br>
-        
-        <input type="radio" name="corpration" id="private" value="private">
-        <label for="private">Privat</label><br>
+            <label for="address">Adress</label>
+            <input style="margin-left: 7px;" type="text" id="address" name="address"><br><br>
 
-        
-        <label for="info">Berätta lite om dina förväntningar</label><br>
-        <textarea id="info" rows="5" cols="80" name="info"></textarea><br>
-        
-        <input type="hidden" name="newsletter" value="no">
-        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-        <label for="newsletter">Vill du ha nyhetsbrev</label>
-        
+            <label for="email">Email</label>
+            <input style="margin-left: 13px;" type="text" id="email" name="email"><br><br>
 
-        <br><br>
-        <input type="submit" value="Registrera dig">
-    </form>
+            <label for="phone">Telefon</label>
+            <input style="margin-left: 3px;" type="text" id="phone" name="phone"><br><br>
+
+            <p>Företag eller Privat?</p>
+            <input type="radio" name="corpration" id="corp" value="corp">
+            <label for="corp">Företag</label><br><br>
+
+            <input type="radio" name="corpration" id="private" value="private">
+            <label for="private">Privat</label><br><br>
+
+            <p>Storlek på företag</p>
+            <input type="radio" name="size" id="nocorp" value="nocorp">
+            <label for="nocorp">Inget företag</label><br><br>
+
+            <input type="radio" name="size" id="smallcorp" value="smallcorp">
+            <label for="smallcorp">1-100 anställda</label><br><br>
+
+            <input type="radio" name="size" id="mediumcorp" value="mediumcorp">
+            <label for="mediumcorp">101-1000 anställda</label><br><br>
+
+            <input type="radio" name="size" id="largecorp" value="largecorp">
+            <label for="largecorp">Mer än 1000 anställda</label><br><br>
+
+
+            <label for="info">Fråga till oss</label><br>
+            <textarea id="info" rows="5" cols="80" name="info"></textarea><br>
+
+            <input type="hidden" name="newsletter" value="no">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Vill du ha nyhetsbrev?</label><br><br>
+
+            <input type="hidden" name="contacttele" value="no">
+            <input type="checkbox" id="contacttele" name="contacttele" value="yes">
+            <label for="contacttele">Vill du bli kontaktad på telefon?</label>
+
+
+            <br><br>
+            <input type="submit" value="Registrera dig">
+        </form>
+    </div>
+
+    <div align="center" style="background-color:cornsilk; margin: 30px;">
+        <iframe style="border: none;" src="contactfooter.html" width="550" height="130" title="contactfooter"></iframe>
+    </div>
 </body>
+
 </html>
